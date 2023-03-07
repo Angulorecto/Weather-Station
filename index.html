@@ -5,20 +5,17 @@
    </head>
   <body>
     <title>Weather Station</title>
-    <iframe id="myFrame" src="/default.asp" style="height:380px;width:100%"></iframe>
+    <iframe id="myFrame" src="https://www.timeanddate.com/weather/usa/honolulu" style="height:380px;width:100%"></iframe>
+    <button onclick="Test()">Hey!</button>
     <script>
       function Test() {
         var iframe = document.getElementById("myFrame");
-        var elmnt = iframe.contentWindow.document.getElementsByTagName("H1")[0];
+        var elmnt = iframe.contentWindow.document.getElementById("wtct");
         elmnt.style.display = "none";
       }
       for (var i = 0; i < Infinity; i++) {
         
       }
-      // something like that
-      var embed = document.createElement("embed");
-      var url = "https://www.timeanddate.com/weather/usa/honolulu";
-      embed.src = url.getElementById("wtct").value;
       </script>
     <div>
       <p id="amongus"> How's it going?
