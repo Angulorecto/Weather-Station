@@ -5,21 +5,12 @@
    </head>
   <body>
     <title>Weather Station</title>
-    <iframe id="myFrame" src="https://www.timeanddate.com/weather/usa/honolulu" style="height:380px;width:100%"></iframe>
-    <button onclick="Test()">Hey!</button>
     <script>
-      function Test() {
-        var iframe = document.getElementById("myFrame");
-        var elmnt = iframe.contentWindow.document.getElementById("wtct");
-        elmnt.style.display = "none";
-      }
-      for (var i = 0; i < Infinity; i++) {
-        
-      }
-      </script>
+      let weathersite = fetch("https://www.timeanddate.com/weather/usa/grand-rapids");
+      weathersite.getElementById("");
+    </script>
     <div>
-      <p id="amongus"> How's it going?
-      </p>
+      <p id="temp"></p>
      </div>
     </body>
 </html>
